@@ -8,10 +8,10 @@ import SearchHistoryPage from './pages/SearchHistoryPage';
 const App: React.FC = () => (
   <Router>
     <Routes>
-      <Route path="/" element={<LoginPage />} />
-      <Route path="/upload-analyze" element={<UploadAnalyzePage />} />
+      <Route path="/" element={<UploadAnalyzePage />} />
+      {/* <Route path="/upload-analyze" element={<UploadAnalyzePage />} />
       <Route path="/result" element={<ResultPage />} />
-      <Route path="/search-history" element={<SearchHistoryPage />} />
+      <Route path="/search-history" element={<SearchHistoryPage />} /> */}
     </Routes>
   </Router>
 );
