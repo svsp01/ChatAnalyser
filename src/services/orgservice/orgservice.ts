@@ -10,3 +10,14 @@ export const getAllOrg = async () => {
         throw error;
     }
 };
+
+
+export const getOrgById = async (id: any) => {
+    try {
+        const response = await AxiosInstance.get(`/getOrgById/${id}`);
+        return response.data;
+    } catch (error) {
+        console.error('Error fetching data:', error);
+        throw error;
+    }
+};

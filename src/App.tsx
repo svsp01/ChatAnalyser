@@ -1,19 +1,25 @@
 
+import { BrowserRouter as Router, Route, RouterProvider, Routes } from 'react-router-dom'
 import './App.css'
-import Footer from './components/Footer/Footer'
 import Home from './components/Hero/Home'
-import NavBar from './components/Nav/NavBar'
+import { PrivateRoute } from './components/Router/PrivateRoute'
+import Login from './components/Login/Login'
+import Orgs from './components/Orgs/Orgs'
 
 
 function App() {
 
   return (
     <>
-    <div className='justify-between flex flex-col '>
-     <NavBar/>
-     <Home/>
-     <Footer/>
-    </div>
+    <Router basename="/">
+        <Routes>
+          <Route element={<PrivateRoute/>}>
+              <Route path='/' element={<Home/>} />
+              <Route path='/getOrgById/:id' element={<Orgs/>} />
+          </Route>
+          <Route path='/login' element={<Login/>}/>
+        </Routes>
+    </Router>
     </>
   )
 }

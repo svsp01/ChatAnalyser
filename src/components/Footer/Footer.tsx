@@ -23,10 +23,10 @@ function Footer() {
           </div>
         </div>
         <div className="mt-6 md:mt-0 flex justify-center ">
-          <a href="https://facebook.com" className="text-gray-400 hover:text-white mx-2"><FaFacebookF size="1.5em" /></a>
-          <a href="https://twitter.com" className="text-gray-400 hover:text-white mx-2"><FaTwitter size="1.5em" /></a>
-          <a href="https://linkedin.com" className="text-gray-400 hover:text-white mx-2"><FaLinkedinIn size="1.5em" /></a>
-          <a href="https://github.com" className="text-gray-400 hover:text-white mx-2"><FaGithub size="1.5em" /></a>
+          <a href="https://facebook.com" className="text-textColor hover:text-white mx-2"><FaFacebookF size="1.5em" /></a>
+          <a href="https://twitter.com" className="text-textColor hover:text-white mx-2"><FaTwitter size="1.5em" /></a>
+          <a href="https://linkedin.com" className="text-textColor hover:text-white mx-2"><FaLinkedinIn size="1.5em" /></a>
+          <a href="https://github.com" className="text-textColor hover:text-white mx-2"><FaGithub size="1.5em" /></a>
         </div>
       </div>
     </footer>
